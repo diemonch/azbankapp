@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://azsadev.database.windows.net:1433;database=azsabankapp;user=azsaadmin@azsadev;password=admin@33;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: azsaadmin
+    password: admin@33
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 9191
